@@ -5,8 +5,6 @@ body{
 }
 header{
     background-color: #1a1a1a ;
-    
-   
 }
 nav a{
     color: white;
@@ -102,9 +100,77 @@ h1{
 #e{
     position: fixed;
     background-color: #1a1a1a;
+    color: white;
+    text-decoration: none;
     padding: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     bottom: 0;
     font-size: 0.9rem;
+}
+#a:hover{
+    background-color: #808080;
+}
+#b:hover{
+    background-color: #808080;
+}
+#c:hover{
+    background-color: #808080;
+}
+#e:hover{
+    background-color: #666666;
+}
+
+
+@media (min-width: 1050px){
+    #about p{
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    header img{
+        
+        max-width: 20rem;
+        left: 0;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    nav a{
+    text-align: center;
+    }
+    #music{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 10%;
+    }
+    #music p{
+        grid-column: 1/2;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        
+    }
+    #music img{
+        grid-column: 3/4;
+    }  
+    #music h1{
+        grid-column: 1/5;
+    }
+}
+@media (min-width: 1400px){
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
